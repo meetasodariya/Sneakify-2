@@ -25,12 +25,17 @@
 }
 
 .categories-sidebar-container {
-    width: 25%;
+    width: 15vw;
     border: 1px solid red;
+    justify-content: left;
+    text-align: left;
+    padding: 2.5rem 2rem;
 }
 
 .categories-list-name {
     list-style-type: none;
+    font-size: 1.8rem;
+    color: black;
 }
 
 .categories-tree {
@@ -42,14 +47,61 @@
 .categories-names {
     position: relative;
     display: none;
+    list-style-type: none;
+    font-size: 1.6rem;
+    color: black;
     z-index: 2;
     transition: opacity 2s ease;
     opacity: 0;
+}
+
+.category-name{
+    color: black;
 }
 
 .categories-tree:hover .categories-names {
     display: block;
     opacity: 1;
 }
+.categories-sorting-form-container{
+    border: 1px solid red;
+    width: 75vw;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
 
+.categories-cards-container{
+    border: 1px soid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories-card{
+    border: 1px solid red;
+    width: 25rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.category-card-image{
+    border: 1px solid red;
+    width: 25rem;
+    height: 25rem;
+}
+
+.category-card-head{
+    border: 1px solid red;
+    font-size: 2rem;
+    padding: .3rem;
+}
+
+.category-card-tag{
+    border: 1px solid red;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 /*End of Categories section */
