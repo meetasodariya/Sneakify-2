@@ -950,7 +950,7 @@ html{
     }
     .carousel-btn{
         bottom: 8rem;
-        left: 50rem;
+        left: 45rem;
         width: 20rem;
         height: 8rem;
         font-size: 3rem;
@@ -987,6 +987,13 @@ html{
     .change .cart-icon-container{
         top: 75rem;
         font-size: 1rem;
+    }
+    .carousel-btn{
+        bottom: 8rem;
+        left: 36rem;
+        width: 20rem;
+        height: 8rem;
+        font-size: 3rem;
     }
 }
 
