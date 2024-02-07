@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/*Categories section*/
+
+.categories-heading-container {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.categories-heading {
+    font-size: 3rem;
+    border: 1px solid red;
+}
+
+.categories-contant-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+.categories-sidebar-container {
+    width: 25%;
+    border: 1px solid red;
+}
+
+.categories-list-name {
+    list-style-type: none;
+}
+
+.categories-tree {
+    a {
+        text-decoration: none;
+    }
+}
+
+.categories-names {
+    position: relative;
+    display: none;
+    z-index: 2;
+    transition: opacity 2s ease;
+    opacity: 0;
+}
+
+.categories-tree:hover .categories-names {
+    display: block;
+    opacity: 1;
+}
+
+/*End of Categories section */

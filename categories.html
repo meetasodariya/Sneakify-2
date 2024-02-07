@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Categiries</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/logo-image.jpeg">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="categories.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+    <!-- Bootstrap CSS and JS CDN links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--End of Bootstrap CSS and JS CDN links -->
+</head>
+<body>
+
+    <!-- Up icon -->
+    <div class="fixed-up-icon">
+        <a href="#"><button class="up-icon">
+            <i class="fa-solid fa-circle-arrow-up" style="color: #000000;"></i>
+        </button></a>
+    </div>
+    <!--End of Up icon -->
+
+    <!-- Navbar -->
+
+    <nav class="navbar-container">
+        <button href="" class="menu">
+            <div class="menu-line menu-line-1"></div>
+            <div class="menu-line menu-line-2"></div>
+            <div class="menu-line menu-line-3"></div>
+        </button>
+        <div class="navbar-1">
+            <div class="logo-container">
+                <a href="#">
+                    <img src="Images/logo-image.jpeg" alt="logo" class="logo-img zoom">
+                </a>
+            </div>
+            <div class="navbar-list-items">
+                <a href="#" class="navbar-link">Home</a>
+            <a href="categories.html" class="navbar-link" style="text-decoration: underline;">Categories</a>
+            <a href="aboutus.html" class="navbar-link">AboutUs</a>
+            <a href="contactus.html" class="navbar-link">ContactUs</a>
+            <a href="login.html" class="navbar-link">Login</a>
+            </div>
+            <div class="search-container">
+                <input type="search" class="searchbar" placeholder="Search here...">
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </button>
+            </div>
+            <div class="cart-icon-container">
+                <a href="#" class="navbar-link"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--End of Navbar -->
+
+    <!-- Categories section -->
+
+    <div class="categories-heading-container">
+        <h1 class="categories-heading">Sneakers Categories</h1>
+    </div>
+
+    <div class="categories-contant-container">
+        <div class="categories-sidebar-container">
+            <ul class="categories-tree">
+                <a href="#"><li class="categories-list-name">Athletic Sneakers</li></a>
+                <ul class="categories-names">
+                    <li class="category-name"><a href="#">Running Shoes</a></li>
+                    <li class="category-name"><a href="#">Basketball Shoes</a></li>
+                    <li class="category-name"><a href="#">Tennis Shoes</a></li>
+                    <li class="category-name"><a href="#">Training Shoes</a></li>
+                    <li class="category-name"><a href="#">Soccer Shoes</a></li>
+                </ul>
+            </ul>
+            <ul class="categories-tree">
+                <a href="#"><li class="categories-list-name">Athletic Sneakers</li></a>
+                <ul class="categories-names">
+                    <li class="category-name"><a href="#">Running Shoes</a></li>
+                    <li class="category-name"><a href="#">Basketball Shoes</a></li>
+                    <li class="category-name"><a href="#">Tennis Shoes</a></li>
+                    <li class="category-name"><a href="#">Training Shoes</a></li>
+                    <li class="category-name"><a href="#">Soccer Shoes</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="categiries-contant">
+            <div class="categories-sorting-form-container">
+                <form class="categories-sorting-form">
+                    <label for="filters" class="filters-label">Filters: <select name="stock" id="stock">
+                        <option value="instock">In Stock</option>
+                        <option value="outofstock">Out of Stock</option>
+                    </select>
+                    <select name="pricerange" id="pricerange">
+                        <option value="all">All Shoes</option>
+                        <option value="below1000">Below 1000</option>
+                        <option value="1000to2000">1000 - 2000</option>
+                        <option value="2000to3000">2000 - 3000</option>
+                        <option value="3000to4000">3000 - 4000</option>
+                        <option value="above4000">Above 4000</option>
+                    </select>
+                </form>
+                <form class="categories-sorting-form">
+                    <label for="sorting" class="sorting-label">Sort By: <select name="sort" id="sort">
+                        <option value="A - Z">Alphabetic, A-Z</option>
+                        <option value="Z - A">Alphabetic, Z-A</option>
+                        <option value="priceltoh">Price Low-High</option>
+                        <option value="pricehtol">Price High-Low</option>
+                        <option value="A - Z">In Stock</option>
+                    </select>
+                    <button class="apply-filters">Apply</button>
+                </form>
+            </div>
+            <div class="categories-cards-container">
+                <div class="categories-card">
+                    <div class="category-card-image">
+                        <img src="" alt="img" class="category-img">
+                    </div>
+                    <div class="category-card-heading">
+                        <h1 class="category-card-head">Athletic Sneakers</h1>
+                    </div>
+                    <div class="category-card-tagline">
+                        <p class="category-card-tag">Running Shoes</p>
+                    </div>
+                    <div class="category-card-price">
+                        <p class="category-card-price">2000&#8377</p>
+                    </div>
+                    <div class="category-card-add-to-cart">
+                        <button class="category-card-cart-btn"><i class="fa-solid fa-cart-arrow-down"></i>&nbsp;&nbsp; ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of Categories section -->
+
+
+
+    <!-- Footer -->
+
+    <section class="section-5-footer-container">
+        <div class="footer-links-list">
+            <a href="#" class="footer-link">Home</a>
+            <a href="categories.html" class="footer-link">Categories</a>
+            <a href="aboutus.html" class="footer-link">AboutUs</a>
+            <a href="contactus.html" class="footer-link">ContatUs</a>
+            <a href="login.html" class="footer-link">Login</a>
+        </div>
+        <div class="footer-social-list-1">
+            <a href="#" class="footer-social"><i class="fa-brands fa-square-instagram" style="color: #ea00fa;"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-facebook" style="color: #0011ff;"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i></a>
+        </div>
+        <div class="copyright-container">
+            <p class="copyright-text">&copy; 2024 Sneakify All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!--End of Footer -->
+    <script src="script.js"></script>
+</body>
+</html>

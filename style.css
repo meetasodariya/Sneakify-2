@@ -18,6 +18,24 @@ html{
 
 /*End of Common Styles */
 
+/* Up icon */
+
+.fixed-up-icon{
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+.up-icon{
+    size: 3rem;
+    border: none;
+    background: none;
+    font-size: 3.5rem;
+}
+
+/*End of Up icon */
+
 /* Navbar */
 
 .navbar-container{
@@ -76,7 +94,7 @@ html{
 }
 
 .navbar-link:hover{
-    scale: 1.2;
+    text-decoration: underline;
     color: rgba(0, 0, 0, 0.759);
 }
 
@@ -87,19 +105,19 @@ html{
 }
 
 .searchbar{
-    width: 20rem;
-    height: 2.5rem;
+    width: 25rem;
+    height: 3rem;
     position: relative;
     border: .2rem solid skyblue;
     border-radius: .5rem;
-    padding: .1rem;
-    font-weight: 500;
-    font-size: 1.3rem;
+    padding: .4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 .search-btn{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     position: absolute;
     /* right: 1rem; */
     border: .2rem solid skyblue;
@@ -123,6 +141,7 @@ html{
 .cart-icon-container{
     position: relative;
     padding:0 2rem 2rem 2rem;
+    text-decoration: none;
     align-items: center;
 }
 
