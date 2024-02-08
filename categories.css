@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 
 /*Categories section*/
 
@@ -29,7 +27,7 @@
     
     justify-content: left;
     text-align: left;
-    background-color: #d8f4f8;
+    /* background-color: #d8f4f8; */
     /* padding: 3rem 1rem; */
 }
 
@@ -108,7 +106,7 @@
     justify-content: space-between; 
     align-items: center;
     display: flex;
-    background-color: #d8f4f8;
+    /* background-color: #d8f4f8; */
 }
 
 .categories-sorting-form{
@@ -126,7 +124,7 @@
 .categories-cards-container{
     padding: 1.5rem;
     border: 1px soid red;
-    background-color: #c9e3e7;
+    /* background-color: #c9e3e7; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
