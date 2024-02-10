@@ -1,5 +1,5 @@
-const menu = document.querySelector('.menu');
-const navbar  = document.querySelector('.navbar-container')
+const menu = document.querySelector('.menu-1');
+const navbar  = document.querySelector('.navbar-main-container')
 
 menu.addEventListener('click',()=>{
     menu.classList.toggle('change')

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakify- Sneaker Customization Studio</title>
     <!-- Tab logo -->
-    <link rel="icon" href="images/logo-image.jpeg">
+    <link rel="icon" href="images/Sneakify-logos_black.png">
     <!-- End of Tab logo -->
     <!-- External files links -->
     <link rel="stylesheet" href="style.css">
@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--End of Fontawasome CDN link -->
     <!-- Bootstrap CSS and JS CDN links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <!--End of Bootstrap CSS and JS CDN links -->
 </head>
 
@@ -24,41 +27,47 @@
     <!-- Up icon -->
     <div class="fixed-up-icon">
         <a href="#"><button class="up-icon">
-            <i class="fa-solid fa-circle-arrow-up" style="color: #000000;"></i>
-        </button></a>
+                <i class="fa-solid fa-circle-arrow-up" style="color: #000000;"></i>
+            </button></a>
     </div>
     <!--End of Up icon -->
 
     <!-- Navbar -->
 
-    <nav class="navbar-container">
-        <button href="" class="menu">
+    <nav class="navbar-main-container">
+        <button class="menu-1">
             <div class="menu-line menu-line-1"></div>
             <div class="menu-line menu-line-2"></div>
             <div class="menu-line menu-line-3"></div>
         </button>
-        <div class="navbar-1">
-            <div class="logo-container">
-                <a href="#">
-                    <img src="Images/logo-image.jpeg" alt="logo" class="logo-img zoom">
-                </a>
-            </div>
-            <div class="navbar-list-items">
-                <a href="#" class="navbar-link">Home</a>
-            <a href="categories.html" class="navbar-link">Categories</a>
-            <a href="aboutus.html" class="navbar-link">AboutUs</a>
-            <a href="contactus.html" class="navbar-link">ContactUs</a>
-            <a href="login.html" class="navbar-link">Login</a>
-            </div>
-            <div class="search-container">
-                <input type="search" class="searchbar" placeholder="Search here...">
-                <button type="submit" class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                </button>
-            </div>
-            <div class="cart-icon-container">
-                <a href="#" class="navbar-link"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
+        <div class="navbar-container">
+            <div class="navbar-logo-list-container">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="Images/Sneakify-logos_white.png" alt="logo" class="logo-img zoom">
+                    </a>
+                </div>
+                <div class="navbar-list-items">
+                    <a href="#" class="navbar-link">Home</a>
+                    <a href="categories.html" class="navbar-link">Categories</a>
+                    <a href="aboutus.html" class="navbar-link">AboutUs</a>
+                    <a href="contactus.html" class="navbar-link">ContactUs</a>
+                    <a href="login.html" class="navbar-link">Login</a>
+                </div>
+        </div>
+        <div class="search-and-cart-container">
+                <div class="search-container">
+                    <input type="search" class="searchbar" placeholder="Search here...">
+                    <button type="submit" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="#" class="navbar-link">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
+                    </a>
+                </div>
+            </div>    
         </div>
     </nav>
 
@@ -67,41 +76,42 @@
     <!-- Section 2 Carousel slider using Bootstrap -->
 
     <section class="section-2">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"
-        data-bs-interval="5000">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/slider-image-1.jpeg" class="d-block w-100" alt="">
-                <div class="carousel-caption  d-md-block">
-                    <h5 class="slide-heading">Step Into<span>Your Unique Style</span></h5>
-                    <button class="carousel-btn">Explore More</button>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/slider-image-2.jpeg" class="d-block w-100" alt="">
-                <div class="carousel-caption  d-md-block">
-                    <h5 class="slide-heading">Experience <span>Sneaker Harmony</span></h5>
-                    <button class="carousel-btn">Explore More</button>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/slider-image-3.jpeg" class="d-block w-100" alt="">
-                <div class="carousel-caption  d-md-block">
-                    <h5 class="slide-heading">Design, Create, and<span>Wear Your Vision</span></h5>
-                    <button class="carousel-btn">Explore More</button>
-                  </div>
-              </div>
+                <div class="carousel-item active">
+                    <img src="images/slider-image-1.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption  d-md-block">
+                        <h5 class="slide-heading">Step Into<span>Your Unique Style</span></h5>
+                        <button class="carousel-btn" href="categories.html">Explore More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-image-2.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption  d-md-block">
+                        <h5 class="slide-heading">Experience <span>Sneaker Harmony</span></h5>
+                        <button class="carousel-btn">Explore More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-image-3.jpeg" class="d-block w-100" alt="">
+                    <div class="carousel-caption  d-md-block">
+                        <h5 class="slide-heading">Design, Create, and<span>Wear Your Vision</span></h5>
+                        <button class="carousel-btn">Explore More</button>
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
-        </section>
+        </div>
+    </section>
 
     <!--End of Section 2 Carousel slider using Bootstrap -->
 
@@ -144,8 +154,8 @@
                 <img src="images/bestseller-img-2.png" alt="img" class="section-4-card-image">
                 <div class="section-card-price-container">
                     <h1 class="section-card-price">2500&#8377</h1><span>3000&#8377</span>
-                    </div>
-                    <a href="#" class="section-card-name-link">Nike Dunk High</a>
+                </div>
+                <a href="#" class="section-card-name-link">Nike Dunk High</a>
             </div>
 
             <div class="section-4-card-actions">
@@ -157,7 +167,7 @@
             <div class="section-4-card">
                 <img src="images/bestseller-img-3.png" alt="img" class="section-4-card-image">
                 <div class="section-card-price-container">
-                <h1 class="section-card-price">2500&#8377</h1><span>3000&#8377</span>
+                    <h1 class="section-card-price">2500&#8377</h1><span>3000&#8377</span>
                 </div>
                 <a href="#" class="section-card-name-link">Nike Air Force</a>
             </div>
@@ -172,8 +182,8 @@
                 <img src="images/bestseller-img-4.png" alt="img" class="section-4-card-image">
                 <div class="section-card-price-container">
                     <h1 class="section-card-price">2500&#8377</h1><span>3000&#8377</span>
-                    </div>
-                    <a href="#" class="section-card-name-link">Nike Air Force</a>
+                </div>
+                <a href="#" class="section-card-name-link">Nike Air Force</a>
             </div>
 
             <div class="section-4-card-actions">
@@ -186,8 +196,8 @@
                 <img src="images/bestseller-img-5.png" alt="img" class="section-4-card-image">
                 <div class="section-card-price-container">
                     <h1 class="section-card-price">2500&#8377</h1><span>3000&#8377</span>
-                    </div>
-                    <a href="#" class="section-card-name-link">Nike Dunk High</a>
+                </div>
+                <a href="#" class="section-card-name-link">Nike Dunk High</a>
             </div>
 
             <div class="section-4-card-actions">
@@ -200,8 +210,8 @@
                 <img src="images/bestseller-img-6.png" alt="img" class="section-4-card-image">
                 <div class="section-card-price-container">
                     <h1 class="section-card-price">2500&#8377</h1><span>3000&#8377</span>
-                    </div>
-                    <a href="#" class="section-card-name-link">Nike Air Low</a>
+                </div>
+                <a href="#" class="section-card-name-link">Nike Air Low</a>
             </div>
 
             <div class="section-4-card-actions">
@@ -214,8 +224,8 @@
                 <img src="images/bestseller-img-1.png" alt="img" class="section-4-card-image">
                 <div class="section-card-price-container">
                     <h1 class="section-card-price">2500&#8377</h1><span>3000&#8377</span>
-                    </div>
-                    <a href="#" class="section-card-name-link">Adidas Sneaker</a>
+                </div>
+                <a href="#" class="section-card-name-link">Adidas Sneaker</a>
             </div>
 
             <div class="section-4-card-actions">
@@ -225,7 +235,7 @@
             </div>
 
         </div>
-        
+
     </section>
 
     <!--End of Section 4 -->
@@ -238,9 +248,9 @@
             <div class="customer-reviews">
                 <div class="review-statement">
                     <i class="fa-solid fa-quote-left quote-icon">&nbsp;</i>
-                <p class="review">
-                    Excellent service by Sneakify platform.
-                </p>
+                    <p class="review">
+                        Excellent service by Sneakify platform.
+                    </p>
                 </div>
                 <div class="review-body">
                     <img src="images/reviewer-img-1.png" alt="" class="review-image">
@@ -255,9 +265,9 @@
             <div class="customer-reviews">
                 <div class="review-statement">
                     <i class="fa-solid fa-quote-left quote-icon">&nbsp;</i>
-                <p class="review">
-                    Timely Delivery of the sneakers and good quality product.
-                </p>
+                    <p class="review">
+                        Timely Delivery of the sneakers and good quality product.
+                    </p>
                 </div>
                 <div class="review-body">
                     <img src="images/reviewer-img-1.png" alt="" class="review-image">
@@ -270,7 +280,7 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <!--End of Section 5 -->
@@ -297,7 +307,7 @@
 
     <!--End of Footer -->
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
