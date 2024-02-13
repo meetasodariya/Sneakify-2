@@ -1,0 +1,14 @@
+/* Cart Section */
+
+.cart-section-container{
+    margin-top: 5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-section-heading{
+    justify-content: center;
+    text-align: center;
+}
+
+/*End of Cart Section */

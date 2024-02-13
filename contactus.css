@@ -1,0 +1,242 @@
+/* Contact us */
+
+.contactus-main-container{
+    
+    width: 100%;
+    height: auto;
+}
+
+.contactus-img-container{
+    width: 100%;
+    height: 40vh;
+}
+
+.contactus-img{
+    opacity: .5;
+    width: 100%;
+    height: 40vh;
+}
+
+.contactus-heading-container{
+    width: 100%;
+}
+
+.contactus-heading{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 600;  
+    margin: 3rem 0;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    text-shadow: .1rem .1rem .2rem black;
+    text-decoration: underline;
+}
+
+.contact-details-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-address-container{
+    
+    font-size: 1.5rem;
+    width: 20%;
+    font-weight: 500;
+}
+
+.address-icon{
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.address-icon:hover{
+  color: gray;
+}
+
+.contact-email-container{
+    
+    font-size: 1.5rem;
+    width: 20%;
+    cursor: pointer;
+    margin-top: -4rem;
+    font-weight: 500;
+}
+
+.mail-icon{
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.mail-icon:hover{
+  color: gray;
+}
+
+.contact-phone-container{
+    
+    font-size: 1.5rem;
+    width: 20%;
+    cursor: pointer;
+    margin-top: -4rem;
+    font-weight: 500;
+}
+
+.phone-icon{
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.phone-icon:hover{
+  color: gray;
+}
+
+/* Contact Form */
+
+.login-form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 5rem;
+    max-width: 50%;
+    width: 90%;
+    text-align: center;
+    margin: 3rem auto;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .login-form p {
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input{
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 1.5rem;
+    transition: border-color 0.3s ease;
+  }
+
+  .input-group input:focus {
+    border-color: #000000;
+    outline: none;
+  }
+
+  .input-group textarea{
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 1.5rem;
+    transition: border-color 0.3s ease;
+  }
+
+  .input-group textarea:focus {
+    border-color: #000000;
+    outline: none;
+  }
+  
+  .contact-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #5c5c5c;
+  }
+
+  .google-map-size{
+    width: 100%;
+  }
+  
+
+/*End of Contact Form */
+
+/*End of Contact us */
+
+/* Rescponsive Design */
+
+@media (min-width:3800px){
+
+    .input-group input{
+      padding: 2rem;
+      margin: 1rem;
+      font-size: 2rem;
+    }
+
+    .input-group textarea{
+      padding: 2rem;
+      margin: 1rem;
+      font-size: 2rem;
+    }
+
+    .contact-btn{
+      font-size: 2rem;
+      padding: 1rem;
+      margin-left: 1.5rem;
+    }
+
+    .google-map-size{
+      width: 100%;
+      height: 30rem;
+    }
+
+}
+
+@media (max-width:780px){
+
+    .input-group input{
+        font-size: 2rem;
+    }
+
+    .input-group textarea{
+        font-size: 2rem;
+    }
+
+    .address-para{
+        font-size: 2rem;
+    }
+
+    .email-para{
+        font-size: 2rem;
+    }
+    
+    .phone-para{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:430px){
+
+  .login-form-container{
+   max-width: 80%;
+  }
+}
+
+/*End of Rescponsive Design */

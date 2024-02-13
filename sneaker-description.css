@@ -63,7 +63,6 @@
 
 }
 
-.product-name-container {}
 
 .product-name {
     font-size: 2.5rem;
@@ -104,9 +103,9 @@
     font-size: 1.5rem;
     font-weight: 500;
     flex-direction: row;
-    justify-content: start;
-    text-align: center;
-    gap: 5rem;
+    justify-content: left;
+    text-align: left;
+    gap: 1rem;
 }
 
 .size-container {
@@ -164,3 +163,52 @@
 
 
 /*End of Product Description */
+
+/* Responsive design */
+
+@media (min-width:3800px){
+
+    .product-name{
+        font-size: 3rem;
+    }
+
+    .product-des{
+        font-size: 2rem;
+    }
+
+    .price-taxes{
+        font-size: 1.8rem;
+    }
+
+    .radio-container{
+        font-size: 2rem;
+        label{
+            input{
+                appearance: none;
+                width: 2rem;
+                height: 2rem;
+                border: 2px solid black;
+                border-radius: 50%;
+                outline: none;
+                cursor: pointer;
+            }
+            input[type="radio"]:checked{
+                background-color: black;
+            }
+        }
+    }
+
+    option{
+        font-size: 20%;
+    }
+
+    .size-container{
+        font-size: 2rem;
+    }
+
+    .section-4-label-link{
+        font-size: 2rem;
+    }
+}
+
+/*End of Responsive design */

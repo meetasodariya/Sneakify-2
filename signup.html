@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Sneakify-Sign In</title>
+    <title>Welcome to Sneakify - Sign Up</title>
     <!-- Tab logo -->
     <link rel="icon" href="images/Sneakify-logos_black.png">
     <!-- End of Tab logo -->
     <!-- External files links -->
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
     <!-- End of External files links -->
     <!-- Fontawasome CDN link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -16,42 +16,49 @@
 </head>
 <body>
 
-    <!-- Login form -->
+    <!-- Sign up form -->
 
     <div class="login-form-container">
         <form class="login-form">
-          <h1>Welcome Back</h1>
-          <p>Please login to your account</p>
+          <h1>Welcome To Sneakify</h1>
+          <p>Please Enter below deatils</p>
+          <div class="input-group">
+            <input type="text" id="fname" name="fname" placeholder="First Name*" required>
+          </div>
+          <div class="input-group">
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+          </div>
+           <div class="input-group">
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
+          </div>
           <div class="input-group">
             <input type="email" id="email" name="email" placeholder="Email*" required>
           </div>
+         
           <div class="input-group">
             <input type="password" id="password" name="password" placeholder="Password*" required>
           </div>
-          <button class="btn-btn" type="submit">Login</button>
+          <button type="submit">Sign Up</button>
 
-          
           <div class="text-with-lines">
             <h2 class="lines-text">OR</h2>
             </div>
 
           <div class="login-via-google">
             <div class="google-icon">
-              <button class="google-icon-btn"><i class="fa-brands fa-google"></i></button>
+              <a href=""><i class="fa-brands fa-google"></i></a>
             </div>
             <div class="fb-icon">
               <a href=""><i class="fa-brands fa-facebook"></i></a>
             </div>
           </div>
-
           <div class="bottom-text">
-            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-            <p><a href="forgot-password.html">Forgot password?</a></p>
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
           </div>
         </form>
       </div>
 
-    <!--End of Login form -->
+    <!--End of Sign up form -->
     
 </body>
 </html>
