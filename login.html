@@ -19,14 +19,14 @@
     <!-- Login form -->
 
     <div class="login-form-container">
-        <form class="login-form">
+        <form class="login-form" id="login-form">
           <h1>Welcome Back</h1>
           <p>Please login to your account</p>
           <div class="input-group">
-            <input type="email" id="email" name="email" placeholder="Email*" required>
+            <input type="email" id="email" name="email" placeholder="Email*">
           </div>
           <div class="input-group">
-            <input type="password" id="password" name="password" placeholder="Password*" required>
+            <input type="password" id="password" name="password" placeholder="Password*">
           </div>
           <button class="btn-btn" type="submit">Login</button>
 
@@ -37,21 +37,19 @@
 
           <div class="login-via-google">
             <div class="google-icon">
-              <button class="google-icon-btn"><i class="fa-brands fa-google"></i></button>
-            </div>
-            <div class="fb-icon">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <button class="google-icon-btn" onclick="signIn()" id="google-sign-in-btn"><i class="fa-brands fa-google"></i></button>
             </div>
           </div>
 
           <div class="bottom-text">
             <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
             <p><a href="forgot-password.html">Forgot password?</a></p>
+            <p style="text-decoration: underline;"><a href="index.html">Back To Home</a></p>
           </div>
         </form>
       </div>
 
     <!--End of Login form -->
-    
+    <script src="home-script.js"></script>
 </body>
 </html>

@@ -166,9 +166,32 @@ html {
     align-items: center;
 }
 
+.cart{
+    position: relative;
+}
+
 .cart-icon{
     font-size: 2.5rem;
 }
+
+.cart-count{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background-color: rgb(26, 181, 215);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: -.7rem;
+    right: 1.1rem;
+    padding: .01rem;
+}
+
+
 
 .menu-1 {
     color: white;
@@ -374,16 +397,13 @@ html {
     text-align: center;
 }
 
-.section-4-card:first-child{
-    padding-left: 4rem;
-}
-
 .section-4-label {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 7rem;
+    margin-top: 2rem;
 }
 
 .section-4-label-heading {
@@ -454,6 +474,24 @@ html {
 
 .section-card-name-link:hover {
     text-decoration: underline;
+}
+
+.slider_container .container{
+    padding: 0 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.slider_container   .card_swiper{
+    padding: 5rem 0;
+}
+
+
+.img-box{
+    img{
+        width: 20rem;
+        height: 25rem;
+    }
 }
 
 /*End of Section 4 */
@@ -579,6 +617,30 @@ html {
 /*End of Footer */
 
 /*Responsive Design */
+
+@media (min-width:3840px){
+  .slider_container .swiper-button-next:after, .slider_container .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none!important;
+        letter-spacing: 0;
+        font-size: 3rem;
+        font-variant: initial;
+        line-height: 1;
+        }
+    
+        .swiper-pagination {
+        font-size: 40px !important; 
+    }
+    
+    .swiper-pagination-bullet {
+        width: 40px !important; 
+        height: 40px !important; 
+    }
+    .card_swiper {
+        padding: 8rem 0;
+    }
+}
 
 @media (min-width:3800px){
     html {
@@ -984,6 +1046,7 @@ html {
     .navbar-list-items {
         top: -100rem;
         display: flex;
+        /* font-size: 5%; */
         position: relative;
         justify-content: center;
         align-items: center;

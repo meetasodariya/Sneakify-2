@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check out - Sneakify</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/Sneakify-logos_black.png">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="checkout.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+</head>
+<body>
+
+    <div class="site-logo-container">
+        <img src="Images/Sneakify-logos_black.png" alt="" class="sneakify-logo">
+    </div>
+
+    <div class="checkout-main-container">
+<body class="page">
+    <main class="main page__main">
+      <form class="form" action="javascript:void(0);" method="POST">
+        <div class="form__cards">
+          <div class="form__main-card">
+            <div class="form__row form__main-content">
+              <div class="form__col">
+                <h3 class="form__title">Billing Address</h3>
+                <div class="form__linput">
+                  <label class="form__txt-label" for="fullname"><i class="fa-solid fa-user"></i>Full Name</label>
+                  <input class="form__txt-input" type="txt" id="fullname" name="fullname" placeholder="Enter Your Name"/>
+                </div>
+                <div class="form__linput">
+                  <label class="form__txt-label" for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+                  <input class="form__txt-input" type="email" id="email" name="email" placeholder="Enter Your Email"/>
+                </div>
+                <div class="form__linput">
+                  <label class="form__txt-label" for="address"><i class="fa-regular fa-address-card"></i>Address</label>
+                  <input class="form__txt-input" type="text" id="address" name="address" placeholder="Enter Your Address"/>
+                </div>
+                <div class="form__linput">
+                  <label class="form__txt-label" for="city"><i class="fa-solid fa-building-columns"></i>City</label>
+                  <input class="form__txt-input" type="text" id="city" name="city" placeholder="Enter Your City"/>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__linput">
+                      <label class="form__txt-label" for="state">State</label>
+                      <input class="form__txt-input" type="text" id="state" name="state" placeholder="Enter Your State"/>
+                    </div>
+                  </div>
+                  <div class="form__col">
+                    <div class="form__linput">
+                      <label class="form__txt-label" for="zip">Zip</label>
+                      <input class="form__txt-input" type="text" id="zip" name="zip" placeholder="Enter Your Zipcode"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__col">
+                <h3 class="form__title">Payment</h3>
+                <div class="form__linput">
+                  <label class="form__txt-label">Accepted Cards</label>
+                  <div class="form__brand-cards"><i class="form__cc-visa fa-brands fa-cc-visa" aria-label="visa"></i><i class="form__cc-amex fa-brands fa-cc-amex" aria-label="amex"></i><i class="form__cc-mastercard fa-brands fa-cc-mastercard" aria-label="mastercard"></i><i class="form__cc-discover fa-brands fa-cc-discover" aria-label="discover"></i></div>
+                </div>
+                <div class="form__linput">
+                  <label class="form__txt-label" for="nameoncard">Name on Card</label>
+                  <input class="form__txt-input" type="text" id="nameoncard" name="nameoncard" placeholder="Card Holder Name"/>
+                </div>
+                <div class="form__linput">
+                  <label class="form__txt-label" for="ccn">Credit card number</label>
+                  <input class="form__txt-input" type="text" id="ccn" name="ccn" placeholder="Card Number"/>
+                </div>
+                <div class="form__linput">
+                  <label class="form__txt-label" for="expmonth">Exp Month</label>
+                  <input class="form__txt-input" type="text" id="expmonth" name="expmonth" placeholder="Expiry Date"/>
+                </div>
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="form__linput">
+                      <label class="form__txt-label" for="expyear">Exp Year</label>
+                      <input class="form__txt-input" type="text" id="expyear" name="expyear" placeholder="Expiry Year"/>
+                    </div>
+                  </div>
+                  <div class="form__col">
+                    <div class="form__linput">
+                      <label class="form__txt-label" for="cvv">CVV</label>
+                      <input class="form__txt-input" type="text" id="cvv" name="cvv" placeholder="Your CVV"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label class="form__checkbox-label" for="issameaddress">
+              <input id="issameaddress" class="checkbox-custom-size"  name="issameaddress" type="checkbox" checked="checked"/>Shipping address same as billing
+            </label>
+            <button class="primary-btn" type="submit">Continue to checkout</button>
+            <a href="cart.html" class="back-to-cart-link">Back to Cart</a>
+          </div>
+          <div class="cart form__cart">
+            <h4 class="cart__title">Cart<span class="cart__total-products"><i class="fa-solid fa-cart-shopping"></i>4</span></h4>
+            <ul class="cart__list">
+              <li class="cart__item"><a class="cart__link" href="#">Nike Air 1</a><span class="cart__item-price">&#8377 1500</span></li>
+              <li class="cart__item"><a class="cart__link" href="#">Sneaker 2</a><span class="cart__item-price">&#8377 5000</span></li>
+              <li class="cart__item"><a class="cart__link" href="#">Nike Low 1</a><span class="cart__item-price">&#8377 8000</span></li>
+              <li class="cart__item"><a class="cart__link" href="#">Sneaker 2</a><span class="cart__item-price">&#8377 2000</span></li>
+            </ul>
+            <p class="cart__total-price">Total<span class="cart__total-price-value">&#8377 16500</span></p>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+    </div>
+    
+</body>
+</html>

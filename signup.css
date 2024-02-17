@@ -140,20 +140,13 @@
   }
   
   .fa-google{
-    color: black;
+    color: white;
   }
 
   .fa-google:hover{
     color: rgb(255, 8, 0);
   }
 
-  .fa-facebook{
-    color: black;
-  }
-
-  .fa-facebook:hover{
-    color: blue;
-  }
 
   /* End of login and sign up form */
 
@@ -290,11 +283,13 @@
     }
     
     .fa-google{
-      color: black;
+      color: white;
     }
-    .fa-facebook{
-      color: black;
+
+    .fa-google:hover{
+      color: rgb(255, 8, 0);
     }
+    
   }
 
   @media screen and (max-width: 600px) {

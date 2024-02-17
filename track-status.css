@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+/* html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+} */
+
+.status-card-main-container{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  width: 50rem;
+  font-weight: 300;
+  min-height: 65vh;
+  position: relative;
+  display: block;
+  margin: 3rem auto;
+}
+
+h2, h4, h6 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.order-status-container {
+  padding: 3rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: .1rem .1rem 1rem black;
+}
+
+.order-id{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#order-redirect-id{
+    font-weight: 500;
+}
+
+figure {
+  display: flex;
+
+  img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 2rem;
+  }
+  
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    
+    h6 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.track-image:hover{
+    border-color: rgb(255, 0, 0);
+}
+
+
+.order-track {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  border-top: 1px dashed rgb(0, 0, 0);
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  
+  .order-track-step {
+    display: flex;
+    height: 7rem;
+  }
+}
+
+  .order-track-step:nth-child(1) .order-track-status-dot,
+.order-track-step:nth-child(2) .order-track-status-dot,
+.order-track-step:nth-child(3) .order-track-status-dot {
+    background: rgb(0, 0, 0); 
+}
+  
+  .order-track-status {
+    margin-right: 1.5rem;
+    position: relative;
+    
+    .order-track-status-dot {
+      display: block;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      background: rgb(74, 227, 238);
+    }
+    .order-track-status-line {
+      display: block;
+      margin: 0 auto;
+      width: 2px;
+      height: 7rem;
+      background: rgb(74, 227, 238);
+    }
+  }
+
+  .order-track-step:nth-child(1) .order-track-status-line,
+  .order-track-step:nth-child(2) .order-track-status-line{
+      background: rgb(0, 0, 0); 
+  }
+  
+  .order-track-text {
+    /* margin-top: -1rem; */
+
+    .order-track-text-stat {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+    
+    .order-track-text-sub {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+
+
+.order-track {
+  transition: all .3s height 0.3s;
+  transform-origin: top center;
+}
+
+.track-cancel-btn{
+    padding: .5rem;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>track Status</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/Sneakify-logos_black.png">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="track-status.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+</head>
+<body>
+
+    <!-- Up icon -->
+    <div class="fixed-up-icon">
+        <a href="#"><button class="up-icon">
+                <i class="fa-solid fa-circle-arrow-up" style="color: #000000;"></i>
+            </button></a>
+    </div>
+    <!--End of Up icon -->
+
+    <!-- Navbar -->
+
+    <nav class="navbar-main-container">
+        <button class="menu-1">
+            <div class="menu-line menu-line-1"></div>
+            <div class="menu-line menu-line-2"></div>
+            <div class="menu-line menu-line-3"></div>
+        </button>
+        <div class="navbar-container">
+            <div class="navbar-logo-list-container">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="Images/Sneakify-logos_white.png" alt="logo" class="logo-img zoom">
+                    </a>
+                </div>
+                <div class="navbar-list-items">
+                    <a href="home.html" class="navbar-link">Home</a>
+                    <a href="profile.html" class="navbar-link">MyProfile</a>
+                    <a href="track-order.html" class="navbar-link">TrackOrder</a>
+                    <a href="categories-2.html" class="navbar-link">Categories</a>
+                    <!-- <a href="aboutus.html" class="navbar-link">AboutUs</a> -->
+                    <a href="contactus-2.html" class="navbar-link">ContactUs</a>
+                </div>
+        </div>
+        <div class="search-and-cart-container">
+                <div class="search-container">
+                    <input type="search" class="searchbar" placeholder="Search here...">
+                    <button type="submit" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="cart-2.html" class="navbar-link cart">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
+                        <p id="count" class="cart-count">   0</p>
+                    </a>
+                </div>
+            </div>    
+        </div>
+    </nav>
+
+    <!--End of Navbar -->
+
+<!-- order status card section -->
+
+    <div class="status-card-main-container">
+    <section class="order-status-container">
+        <div class="order-id" id="order-redirect-id"><p>Order Id: </p></div>
+        <figure>
+          <img src="Images/category-cart-img-2.png" alt="img" class="track-image">
+          <figcaption>
+            <h4>Nike Air Force 1 Low</h4>
+            <h6>Custom Running Shoes</h6>
+            <h2>&#8377 2000(COD)</h2>
+          </figcaption>
+        </figure>
+        <div class="order-track">
+          <div class="order-track-step">
+            <div class="order-track-status">
+              <span class="order-track-status-dot"></span>
+              <span class="order-track-status-line"></span>
+            </div>
+            <div class="order-track-text">
+              <p class="order-track-text-stat">Order Received</p>
+              <span class="order-track-text-sub">15th February, 2024</span>
+            </div>
+          </div>
+          <div class="order-track-step">
+            <div class="order-track-status">
+              <span class="order-track-status-dot"></span>
+              <span class="order-track-status-line"></span>
+            </div>
+            <div class="order-track-text">
+              <p class="order-track-text-stat">Order Processed</p>
+              <span class="order-track-text-sub">16th February, 2024</span>
+            </div>
+          </div>
+          <div class="order-track-step">
+            <div class="order-track-status">
+              <span class="order-track-status-dot"></span>
+              <span class="order-track-status-line"></span>
+            </div>
+            <div class="order-track-text">
+              <p class="order-track-text-stat">Manufracturing In Progress</p>
+              <span class="order-track-text-sub">17th February, 2024</span>
+            </div>
+          </div>
+          <div class="order-track-step">
+            <div class="order-track-status">
+              <span class="order-track-status-dot"></span>
+              <span class="order-track-status-line"></span>
+            </div>
+            <div class="order-track-text">
+              <p class="order-track-text-stat">Order Dispatched</p>
+              <span class="order-track-text-sub">18th February, 2024</span>
+            </div>
+          </div>
+          <div class="order-track-step">
+            <div class="order-track-status">
+              <span class="order-track-status-dot"></span>
+              <!-- <span class="order-track-status-line"></span> -->
+            </div>
+            <div class="order-track-text">
+              <p class="order-track-text-stat">Order Deliverd</p>
+              <span class="order-track-text-sub">19th February, 2024</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+      <!--End of order status card section -->
+
+       <!-- Footer -->
+
+    <section class="section-5-footer-container">
+        <div class="footer-links-list">
+            <a href="home.html" class="footer-link">Home</a>
+            <a href="profile.html" class="footer-link">MyProfile</a>
+            <a href="track-order.html" class="footer-link">TrackOrder</a>
+            <a href="categories-2.html" class="footer-link">Categories</a>
+            <a href="contactus-2.html" class="footer-link">ContatUs</a>
+        </div>
+        <div class="footer-social-list-1">
+            <a href="#" class="footer-social"><i class="fa-brands fa-square-instagram" style="color: #ea00fa;"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-facebook" style="color: #0011ff;"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-square-x-twitter" style="color: #ffffff;"></i></a>
+        </div>
+        <div class="copyright-container">
+            <p class="copyright-text">&copy; 2024 Sneakify All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!--End of Footer -->
+
+    <script>
+        window.onload = function() {
+            var params = new URLSearchParams(window.location.search);
+            var text = params.get('text');
+            document.getElementById("order-redirect-id").innerHTML +=  text;
+        }
+    </script>
+
+   <script src="script.js"></script>
+</body>
+</html>

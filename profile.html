@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/Sneakify-logos_black.png">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar-main-container">
+        <button class="menu-1">
+            <div class="menu-line menu-line-1"></div>
+            <div class="menu-line menu-line-2"></div>
+            <div class="menu-line menu-line-3"></div>
+        </button>
+        <div class="navbar-container">
+            <div class="navbar-logo-list-container">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="Images/Sneakify-logos_white.png" alt="logo" class="logo-img zoom">
+                    </a>
+                </div>
+                <div class="navbar-list-items">
+                    <a href="home.html" class="navbar-link">Home</a>
+                    <a href="profile.html" class="navbar-link">MyProfile</a>
+                    <a href="track-order.html" class="navbar-link">TrackOrder</a>
+                    <a href="categories-2.html" class="navbar-link">Categories</a>
+                    <!-- <a href="aboutus.html" class="navbar-link">AboutUs</a> -->
+                    <a href="contactus-2.html" class="navbar-link">ContactUs</a>
+                </div>
+        </div>
+        <div class="search-and-cart-container">
+                <div class="search-container">
+                    <input type="search" class="searchbar" placeholder="Search here...">
+                    <button type="submit" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="cart-2.html" class="navbar-link cart">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
+                        <p id="count" class="cart-count">   0</p>
+                    </a>
+                </div>
+            </div>    
+        </div>
+    </nav>
+
+    <!--End of Navbar -->
+
+    
+    <!-- Sign up form -->
+
+    <div class="login-form-container">
+        <form class="login-form">
+          <h1 id="full-name">Welcome </h1>
+          <div class="input-group"><label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" value="meet" placeholder="First Name*" readonly="readonly">
+          </div>
+          <div class="input-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" value="Asodariya" placeholder="Last Name" readonly="readonly">
+          </div>
+           <div class="input-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="0123456789"  placeholder="Phone Number*">
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="abcd@gmail.com" placeholder="Email*" readonly="readonly">
+          </div>
+          <div class="input-group">
+            <label for="address">Address:</label>
+            <textarea rows="3" id="message" name="message" placeholder="Write your message here...*" readonly="readonly">1206, Bridge, Satyamev Elite, Sardar Patel Ring Rd, South Bopal, Bopal, Ahmedabad, Gujarat 380058</textarea>
+          </div>
+          <div class="input-group">
+          <button type="submit" class="contact-btn">Edit</button>
+          <button type="button" class="contact-btn">Done</button>
+         </div>
+          <div class="login-via-google">
+            <div class="google-icon">
+              <button onclick="logout(event)" class="contact-btn">Logout</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    <!--End of Sign up form -->
+
+
+    <!-- Footer -->
+
+    <section class="section-5-footer-container">
+        <div class="footer-links-list">
+            <a href="home.html" class="footer-link">Home</a>
+            <a href="profile.html" class="footer-link">MyProfile</a>
+            <a href="track-order.html" class="footer-link">TrackOrder</a>
+            <a href="categories-2.html" class="footer-link">Categories</a>
+            <a href="contactus-2.html" class="footer-link">ContatUs</a>
+        </div>
+        <div class="footer-social-list-1">
+            <a href="#" class="footer-social"><i class="fa-brands fa-square-instagram" style="color: #ea00fa;"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-facebook" style="color: #0011ff;"></i></a>
+            <a href="#" class="footer-social"><i class="fa-brands fa-square-x-twitter" style="color: #ffffff;"></i></a>
+        </div>
+        <div class="copyright-container">
+            <p class="copyright-text">&copy; 2024 Sneakify All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!--End of Footer -->
+    
+
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

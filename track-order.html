@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track My Order - Sneakify</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/Sneakify-logos_black.png">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="login.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+</head>
+<body>
+
+    <!-- Login form -->
+
+    <div class="login-form-container">
+        <form class="login-form" onsubmit="trackOrder(event)">
+          <p>Enter Order Id for Track it</p>
+          <div class="input-group">
+            <input type="tel" id="trackid" name="trackid" required>
+          </div>
+          <button type="submit">Track Now</button>
+        </form>
+      </div>
+
+    <!--End of Login form -->
+    <script>
+        function trackOrder(event){
+            event.preventDefault();
+            var text = document.getElementById("trackid").value;
+            window.location.href = "track-status.html?text=" + encodeURIComponent(text);
+        }
+    </script>
+</body>
+</html>
