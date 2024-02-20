@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakify- Admin Dashboard</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/Sneakify-logos_black.png">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="CSS/admin-dashboard.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar-main-container">
+        <button class="menu-1">
+            <div class="menu-line menu-line-1"></div>
+            <div class="menu-line menu-line-2"></div>
+            <div class="menu-line menu-line-3"></div>
+        </button>
+        <div class="navbar-container">
+            <div class="navbar-logo-list-container">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="Images/Sneakify-logos_white.png" alt="logo" class="logo-img zoom">
+                    </a>
+                </div>
+                <div class="navbar-list-items">
+                    <a href="admin-dashboard.html" class="navbar-link">Dashboard</a>
+                    <a href="product-management.html" class="navbar-link">Products</a>
+                    <a href="order-management.html" class="navbar-link">Orders</a>
+                    <a href="delivery-management.html" class="navbar-link">Delivery</a>
+                    <!-- <a href="aboutus.html" class="navbar-link">AboutUs</a> -->
+                    <a href="admin-login.html" class="navbar-link">Logout</a>
+                </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--End of Navbar -->
+
+    <div class="container">
+      <h1>Admin Dashboard</h1>
+      <div class="cards">
+          <div class="card">
+              <h2>Total Users</h2>
+              <p class="statistic">100</p>
+          </div>
+          <div class="card">
+              <h2>Total Products</h2>
+              <p class="statistic">50</p>
+          </div>
+          <div class="card">
+              <h2>Total Orders</h2>
+              <p class="statistic">200</p>
+          </div>
+          <div class="card">
+              <h2>Revenue Generated</h2>
+              <p class="statistic">&#8377 5000</p>
+          </div>
+      </div>
+      <div class="charts">
+        <div class="chart">
+            <h3>Users Chart</h3>
+            <canvas id="usersChart"></canvas>
+        </div>
+        <div class="chart">
+            <h3>Products Chart</h3>
+            <canvas id="productsChart"></canvas>
+        </div>
+        <div class="chart">
+            <h3>Orders Chart</h3>
+            <canvas id="ordersChart"></canvas>
+        </div>
+        <div class="chart">
+            <h3>Revenue Chart</h3>
+            <canvas id="revenueChart"></canvas>
+        </div>
+    </div>
+  </div>
+  
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

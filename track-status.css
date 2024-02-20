@@ -16,6 +16,21 @@
   position: relative;
   display: block;
   margin: 3rem auto;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 1.5s .5s forwards;
+}
+
+@keyframes fadeAnimation {
+  0% {
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  100% {
+      opacity: 1;
+      visibility: visible;
+  }
 }
 
 h2, h4, h6 {

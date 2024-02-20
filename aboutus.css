@@ -3,6 +3,21 @@
 .aboutus-main-container{
     width: 100%;
     height: auto;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1.5s .5s forwards;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .aboutus-img-container{

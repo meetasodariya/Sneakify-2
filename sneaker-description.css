@@ -26,6 +26,21 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1.5s .5s forwards;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .product-img-container {

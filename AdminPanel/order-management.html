@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/Sneakify-logos_black.png">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="CSS/order-management.css">
+    <link rel="stylesheet" href="CSS/admin-dashboard.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+</head>
+<body>
+    
+    <!-- Navbar -->
+
+    <nav class="navbar-main-container">
+        <button class="menu-1">
+            <div class="menu-line menu-line-1"></div>
+            <div class="menu-line menu-line-2"></div>
+            <div class="menu-line menu-line-3"></div>
+        </button>
+        <div class="navbar-container">
+            <div class="navbar-logo-list-container">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="Images/Sneakify-logos_white.png" alt="logo" class="logo-img zoom">
+                    </a>
+                </div>
+                <div class="navbar-list-items">
+                    <a href="admin-dashboard.html" class="navbar-link">Dashboard</a>
+                    <a href="product-management.html" class="navbar-link">Products</a>
+                    <a href="order-management.html" class="navbar-link">Orders</a>
+                    <a href="delivery-management.html" class="navbar-link">Delivery</a>
+                    <!-- <a href="aboutus.html" class="navbar-link">AboutUs</a> -->
+                    <a href="admin-login.html" class="navbar-link">Logout</a>
+                </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--End of Navbar -->
+
+    <!-- Order Table -->
+
+    <h1>Order Management</h1>
+    <div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Customer Name</th>
+        <th>Order Date</th>
+        <th>Total Amount</th>
+        <th>Status</th>
+        <th>Revenue</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>ABCD</td>
+        <td>20-02-2024</td>
+        <td> &#8377 10000</td>
+        <td>Processing</td>
+        <td>&#8377 500</td>
+        <td class="actions">
+            <button class="btn-order">Edit</button>
+            <button class="btn-order">Cancel</button>
+          </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>EFGH</td>
+        <td>20-02-2024</td>
+        <td> &#8377 8000</td>
+        <td>Deliverd</td>
+        <td>&#8377 700</td>
+        <td class="actions">
+            <button class="btn-order">Edit</button>
+            <button class="btn-order">Cancel</button>
+          </td>
+      </tr>
+      <!-- Additional rows for more orders -->
+    </tbody>
+  </table>
+</div>
+    <!--End of Order Table -->
+
+</body>
+</html>

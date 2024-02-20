@@ -1,0 +1,217 @@
+.container {
+    max-width: 75rem;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 2rem;
+    margin: 1.5rem;
+    font-size: 3rem;
+}
+
+.product-list {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list li {
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    padding: .8rem;
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sneaker-details{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-list li img {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1.5rem;
+}
+
+.product-list li .delete-btn {
+    background-color: #ff5f5f;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: .5rem .8rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.add-product {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.add-product h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.add-product label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.add-product input[type="file"],
+.add-product input[type="text"],
+.add-product input[type="number"],
+.add-product textarea,
+.add-product select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-product label {
+    display: inline-block;
+}
+
+.add-product input[type="checkbox"] {
+    display: inline-block; 
+    margin-left: 1rem;
+}
+
+.add-product label .cust{
+    display: flex;
+}
+
+.add-product .add-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (min-width:3840px){
+
+    .container{
+        font-size: 100%;
+    }
+
+    .add-product input[type="text"]{
+        font-size: 1.5rem;
+    }
+    .add-product input[type="number"]{
+        font-size: 1.5rem;
+    }
+    .add-product input[type="file"]{
+        font-size: 1.5rem;
+    }
+    .add-product input[type="checkbox"]{
+        font-size: 1.5rem;
+        appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid black;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: black;
+      }
+
+    .add-product textarea{
+        font-size: 1.5rem;
+    }
+    .add-product select{
+        font-size: 1.5rem;
+
+        option{
+            font-size: .4rem;
+        }
+    }
+
+    .add-product label {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .add-product .add-btn{
+        font-size: 1.7rem;
+    }
+
+    
+}
+@media (max-width:600px){
+
+    .product-list li{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .product-list ul{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .add-product label {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .add-product input[type="file"]{
+        font-size: 2rem;
+    }
+
+    .sneaker-details{
+        font-size: 2rem;
+    }
+
+    .product-list li .delete-btn{
+        font-size: 2rem;
+    }
+
+    
+}
+
+/*End of  Responsive Design */

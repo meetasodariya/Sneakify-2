@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <!-- Tab logo -->
+    <link rel="icon" href="images/Sneakify-logos_black.png">
+    <!-- End of Tab logo -->
+    <!-- External files links -->
+    <link rel="stylesheet" href="CSS/product-management.css">
+    <link rel="stylesheet" href="CSS/admin-dashboard.css">
+    <!-- End of External files links -->
+    <!-- Fontawasome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--End of Fontawasome CDN link -->
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar-main-container">
+        <button class="menu-1">
+            <div class="menu-line menu-line-1"></div>
+            <div class="menu-line menu-line-2"></div>
+            <div class="menu-line menu-line-3"></div>
+        </button>
+        <div class="navbar-container">
+            <div class="navbar-logo-list-container">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="Images/Sneakify-logos_white.png" alt="logo" class="logo-img zoom">
+                    </a>
+                </div>
+                <div class="navbar-list-items">
+                    <a href="admin-dashboard.html" class="navbar-link">Dashboard</a>
+                    <a href="product-management.html" class="navbar-link">Products</a>
+                    <a href="order-management.html" class="navbar-link">Orders</a>
+                    <a href="delivery-management.html" class="navbar-link">Delivery</a>
+                    <!-- <a href="aboutus.html" class="navbar-link">AboutUs</a> -->
+                    <a href="admin-login.html" class="navbar-link">Logout</a>
+                </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--End of Navbar -->
+
+
+    <div class="container">
+        <h1>Product Management</h1>
+
+        <!-- Product List -->
+        <div class="product-list">
+            <h2>Added Products</h2>
+            <ul>
+                <li>
+                    <img src="images/slider-image-1.jpeg" alt="Sneaker 1">
+                    <div class="sneaker-details">
+                        <h3>Nike Air 1</h3>
+                        <p>Athletic Sneakerrs</p>
+                        <p>Price: &#8377 10000</p>
+                        <p>Gender: Men</p>
+                        <p>Color: Sky Blue</p>
+                        <p>Customizable: Yes</p>
+                    </div>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li>
+                    <img src="images/slider-image-2.jpeg" alt="Sneaker 2">
+                    <div class="sneaker-details">
+                        <h3>Nike High 2</h3>
+                        <p>Tracking Sneakers</p>
+                        <p>Price: &#8377 1200 </p>
+                        <p>Gender: Women</p>
+                        <p>Color: White / Blue</p>
+                        <p>Customizable: No</p>
+                    </div>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <!-- More product items -->
+            </ul>
+        </div>
+
+        <!-- Add Product Form -->
+        <div class="add-product">
+            <h2>Add New Product</h2>
+            <form>
+                <label for="image" class="form-labels">Sneaker Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <label for="name">Sneaker Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    <option value="unisex">Unisex</option>
+                </select>
+
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" required>
+
+                <label for="customizable">Customizable:</label>
+                <input type="checkbox" id="customizable" name="customizable">
+
+                <button type="submit" class="add-btn">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
