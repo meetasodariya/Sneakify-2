@@ -168,6 +168,7 @@
                                 <option value="outofstock">Out of Stock</option>
                             </select>
                             <select name="sgender" id="sgender">
+                                <option value="sallgender">All Gender</option>
                                 <option value="smale">Male</option>
                                 <option value="sfemale">Female</option>
                             </select>
@@ -192,19 +193,23 @@
                 </div>
                 <div>
                     <form class="categories-sorting-form">
-                        <label for="sorting" class="sorting-label">Sort By: <select name="sort" id="sort">
+                        <label for="sorting" class="sorting-label">Sort By: 
+                            <select name="sort" id="sort">
                                 <option value="A - Z">Alphabetic, A-Z</option>
                                 <option value="Z - A">Alphabetic, Z-A</option>
                                 <option value="priceltoh">Price Low-High</option>
                                 <option value="pricehtol">Price High-Low</option>
-                                <option value="A - Z">In Stock</option>
+                                <option value="instock">In Stock</option>
                             </select>
                             <button class="apply-filters">Apply</button>
                     </form>
                 </div>
-
             </div>
-            <div class="categories-cards-container">
+            
+
+  
+            <div class="categories-cards-container"></div>
+            <!-- <div class="categories-cards-container">
                 <div class="categories-card">
                     <div class="category-card-image">
                         <a href="sneaker-description.html"><img src="Images/product-img-1.jfif" alt="img"
@@ -368,7 +373,7 @@
                             ADD TO CART</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -398,6 +403,7 @@
 
     <!--End of Footer -->
     <script src="script.js"></script>
+    <script src="categories.js"></script>
 </body>
 
 </html>

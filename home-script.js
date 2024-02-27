@@ -22,8 +22,8 @@ function signIn(event){
 
 
     let params = {
-        "client_id":"411007623187-ddf19tkeb68ji8fjrqj4ild7hg1iqeao.apps.googleusercontent.com",
-        "redirect_uri":"http://127.0.0.1:5501/home.html",
+        "client_id":"411007623187-1lurl2r7o6ga5l5f2oue1us9il43akl6.apps.googleusercontent.com",
+        "redirect_uri":"http://127.0.0.1:5503/home.html",
         "response_type":"token",
         "scope":"https://www.googleapis.com/auth/userinfo.profile",
         "include_granted_scopes":'true',
